@@ -259,18 +259,18 @@ class HomeLoxonePlugin(plugin.SpeechHandlerPlugin):
         phrases=[]
 
         # get room title
-        phrases.append(self._roomtitle.encode('utf-8'))
+        phrases.append(self._roomtitle)#.encode('utf-8')
 
         # get all room names
-        for room in self._rooms:
-            phrases.append(self._rooms[room]['name'].encode('utf-8'))
+        for room in self._rooms:            
+            phrases.append(self._rooms[room]['name'])#.encode('utf-8')
 
         # get control names
         for cat in self._controls:
-                phrases.append(self._controls[cat]['name'].encode('utf-8'))
+                phrases.append(self._controls[cat]['name'])#.encode('utf-8')
                 controls=self._controls[cat]['controls']
                 for control in controls:
-                    phrases.append(controls[control]['name'].encode('utf-8'))
+                    phrases.append(controls[control]['name']) #.encode('utf-8')
 
         # add some more phrases typically used
         # FIXME: this should be defined by intents
