@@ -1,0 +1,10 @@
+[Plugin]
+Name = home
+Version = 1.0.0
+License = MIT
+URL = http://jasperproject.github.io/
+Description = Control Loxone Smart Home
+
+[Author]
+Name = Andreas Weber
+URL = http://jasperproject.github.io/
